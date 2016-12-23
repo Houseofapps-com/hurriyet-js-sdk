@@ -1,14 +1,13 @@
 {
   "name": "hurriyet-js-sdk",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A wrapper for Hurriyet API.",
   "main": "index.js",
   "dependencies": {
     "node-fetch": "^1.6.3"
   },
   "devDependencies": {},
-  "scripts": {
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Houseofapps-com/hurriyet-js-sdk.git"
