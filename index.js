@@ -26,7 +26,6 @@ class HurriyetAPIWrapper {
 			}).then((response) => {
 				return response.json();
 			}).then((responseJson) => {
-				console.log(responseJson);
 				resolve(responseJson);
 				return;
 			})
