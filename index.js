@@ -15,7 +15,7 @@ class HurriyetAPIWrapper {
 			headers.apikey = '';
 		}
 
-		if (fetch) {
+	if (typeof fetch !== 'undefined') {
 			localFetch = fetch;
 		} else if (nodeFetch) {
 			localFetch = nodeFetch;
