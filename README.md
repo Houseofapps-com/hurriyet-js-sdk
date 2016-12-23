@@ -24,7 +24,7 @@
 4. Get your API key at your Dashboard. (Under the menu when you click on top-right corner of the site.)
 5. Initialize a HurriyetAPI object using said API key.
 
-		let HurriyetAPI = new hurriyetsdk('YOUR TOKEN');
+		let HurriyetAPI = new hurriyetsdk({ token: 'YOUR TOKEN' });
 6. Example call is as follows (wrapping your properties as an object is a must.);
 
 		HurriyetAPI.getArticles({
