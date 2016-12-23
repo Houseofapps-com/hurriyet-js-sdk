@@ -44,6 +44,8 @@
 
 		HurriyetAPI.getArticles({
 			articleId: '12345'
+		}).then((response) => {
+			console.log(response);
 		});
 	Please refer to the Hurriyet's docs for what the properties mean. You need to supply them as a key-value pair.
 7. You can now use HurriyetAPI for your needs. Happy coding!
