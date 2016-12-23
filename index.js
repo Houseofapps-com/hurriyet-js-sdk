@@ -1,4 +1,4 @@
-let fetch = require('node-fetch');
+const dataFetch = (fetch) ? fetch : require('node-fetch');
 
 // TODO: DEBUG ENV CONTROL
 const API_LOCATION = 'https://api.hurriyet.com.tr/v1';
@@ -13,14 +13,14 @@ class HurriyetAPIWrapper {
 			headers.apikey = token;
 		} else {
 			console.log('You must supply a API key.');
-			header.apikey = '';
+			headers.apikey = '';
 		}
 	}
 
 	sendRequest({ endpoint, parameters }) {
 		return new Promise((resolve,reject) => {
 			const endPoint = API_LOCATION + '/'+endpoint+'/'+ this.getQueryString(parameters)
-			fetch(endPoint, {
+			dataFetch(endPoint, {
 				method: 'GET',
 				headers,
 			}).then((response) => {
