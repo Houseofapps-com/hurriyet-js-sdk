@@ -7,7 +7,7 @@ let headers = {
 };
 
 class HurriyetAPIWrapper {
-	constructor({ token, nodeFetch, }) {
+	constructor({ token, fetch: nodeFetch, }) {
 		if (token) {
 			headers.apikey = token;
 		} else {
