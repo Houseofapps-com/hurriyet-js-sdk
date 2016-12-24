@@ -63,6 +63,7 @@ class HurriyetAPIWrapper {
 			filter,
 			select,
 			top,
+			skip,
 		} = args;
 
 		let parameters = [];
@@ -85,6 +86,10 @@ class HurriyetAPIWrapper {
 				parameters: parameters
 			});
 		} else {
+			if (skip) {
+				parameters.push({ skip });
+			}
+
 			return this.sendRequest({ 
 				endpoint: 'articles',
 				parameters: parameters
@@ -98,6 +103,7 @@ class HurriyetAPIWrapper {
 			filter,
 			select,
 			top,
+			skip,
 		} = args;
 
 		let parameters = [];
@@ -120,6 +126,10 @@ class HurriyetAPIWrapper {
 				parameters: parameters
 			});
 		} else {
+			if (skip) {
+				parameters.push({ skip });
+			}
+
 			return this.sendRequest({ 
 				endpoint: 'paths',
 				parameters: parameters
@@ -133,6 +143,7 @@ class HurriyetAPIWrapper {
 			filter,
 			select,
 			top,
+			skip
 		} = args;
 
 		let parameters = [];
@@ -155,6 +166,10 @@ class HurriyetAPIWrapper {
 				parameters: parameters
 			});
 		} else {
+			if (skip) {
+				parameters.push({ skip });
+			}
+
 			return this.sendRequest({ 
 				endpoint: 'columns',
 				parameters: parameters
@@ -180,6 +195,7 @@ class HurriyetAPIWrapper {
 			filter,
 			select,
 			top,
+			skip,
 		} = args;
 
 		let parameters = [];
@@ -202,6 +218,10 @@ class HurriyetAPIWrapper {
 				parameters: parameters
 			});
 		} else {
+			if (skip) {
+				parameters.push({ skip });
+			}
+
 			return this.sendRequest({ 
 				endpoint: 'newsphotogalleries',
 				parameters: parameters
@@ -215,6 +235,7 @@ class HurriyetAPIWrapper {
 			filter,
 			select,
 			top,
+			skip,
 		} = args;
 
 		let parameters = [];
@@ -237,6 +258,10 @@ class HurriyetAPIWrapper {
 				parameters: parameters
 			});
 		} else {
+			if (skip) {
+				parameters.push({ skip });
+			}
+
 			return this.sendRequest({ 
 				endpoint: 'pages',
 				parameters: parameters
@@ -250,6 +275,7 @@ class HurriyetAPIWrapper {
 			filter,
 			select,
 			top,
+			skip,
 		} = args;
 
 		let parameters = [];
@@ -272,6 +298,10 @@ class HurriyetAPIWrapper {
 				parameters: parameters
 			});
 		} else {
+			if (skip) {
+				parameters.push({ skip });
+			}
+
 			return this.sendRequest({ 
 				endpoint: 'writers',
 				parameters: parameters

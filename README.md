@@ -55,11 +55,13 @@
 	 2. filter
 	 3. select
 	 4. top
+	 5. skip
 ## Column
 	 1. columnId: If not supplied, will retrieve a list of columns.
 	 2. filter
 	 3. select
 	 4. top
+	 5. skip
 ## Date
 	None.
 ## News Photo Gallery
@@ -67,16 +69,19 @@
 	 2. filter
 	 3. select
 	 4. top
+	 5. skip
 ## Page
 	 1. pageId: If not supplied, will retrieve a list of pages.
 	 2. filter
 	 3. select
 	 4. top
+	 5. skip
 ## Path
 	1. pathId: If not supplied, will retrieve a list of paths.
 	2. filter
 	3. select
 	4. top
+	5. skip
 ## Search
 	1. skip
 	2. top
@@ -87,5 +92,6 @@
 	2. filter
 	3. select
 	4. top
+	5. skip
 
 Developed by amazing people **@** House of Apps.
